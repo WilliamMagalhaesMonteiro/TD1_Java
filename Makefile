@@ -1,8 +1,9 @@
 run: compil
-	java Main
+	java -ea Main
 
 compil:
-	javac *.java
+	javac Fraction.java
+	javac Main.java
 
 clean:
 	rm *.class

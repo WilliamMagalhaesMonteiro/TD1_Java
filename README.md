@@ -64,7 +64,9 @@ Quelle syntaxe est utilisée pour ce fichier ?
     # si j'avais par un fichiers "vs.config" je l'ajouterais au .gitignore
     ```
 1. Configurez l'accès par clé publique/clé privée à la forge (cf. [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)).
-    > Expliquez la procédure de façon synthétique
+    > Générer une clé ssh (couple public-privé).
+    > Associer la clé privée à l'ordinateur
+    > Donner à github la clé publique
 
 ## Partie II (à faire durant le TD) : compléter la classe `Fraction`
 Dans cet partie, vous compléterez les classes `Fraction` et `Main`.
