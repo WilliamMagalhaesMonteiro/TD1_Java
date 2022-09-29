@@ -49,19 +49,19 @@ Quelle syntaxe est utilisée pour ce fichier ?
     > La syntaxe Markdown
 1. Récupérez localement les modifications effectuées sur la forge.
     ```bash
-    # Répondre ici
+    # git pull
     ```
 1. Ajoutez les répertoires et fichiers issus de la compilation aux fichiers ignorés par `git` (cf. [`.gitignore` pour Java](https://github.com/github/gitignore/blob/main/Java.gitignore));
     ```bash
-    # Copier ici le contenu de `.gitignore`
+    # j'ai copié le fichier du lien github ci-dessus
     ```
 1. Retirez les fichiers de configuration de l'IDE du projet;
     ```bash
-    # Répondre ici
+    # je n'en ai pas
     ```
     Ajoutez-les aux fichiers ignorés par `git`.
     ```bash
-    # Copier ici les modifications de `.gitignore`
+    # si j'avais par un fichiers "vs.config" je l'ajouterais au .gitignore
     ```
 1. Configurez l'accès par clé publique/clé privée à la forge (cf. [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)).
     > Expliquez la procédure de façon synthétique
