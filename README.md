@@ -135,11 +135,11 @@ Donnez un exemple.
 1. Donnez la ou les commandes shell permettant de
     1. afficher les fichiers d'un répertoire triés par taille (taille affichée lisiblement)
         ```bash
-        # ls -lS
+        ls -lS
         ```
     1. compter le nombre de ligne d'un fichier
         ```bash
-        # wc nomfichier
+        wc nomfichier
         ```
     1. afficher les lignes du fichier `Main.java` contenant la chaîne `uneVariable`
         ```bash
