@@ -11,8 +11,8 @@ public class Main {
         assert f.getDenominateur() != 0;
         
 
-        System.out.println("Ici :" + f.getDoubleValue());
-        assert f.getDoubleValue() == 0.5;
+        System.out.println("Ici :" + f.doubleValue());
+        assert f.doubleValue() == 0.5;
 
         Fraction f2 = new Fraction(1,2);
         Fraction f3 = new Fraction(3,4);
@@ -20,7 +20,13 @@ public class Main {
 
         System.out.println(f2.add(f3).toString());
 
+        Fraction f4 = new Fraction(1,2);
+        Fraction f5 = new Fraction(3,8);
 
+        assert f4.equals(f5) == false;
+
+
+    
 
     }
     

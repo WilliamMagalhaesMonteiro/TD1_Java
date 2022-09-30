@@ -1,4 +1,4 @@
-public class Fraction {
+public class Fraction{
 
     int numerateur;
     int denominateur;
@@ -29,7 +29,7 @@ public class Fraction {
         return denominateur;
     }
 
-    public double getDoubleValue(){
+    public double doubleValue(){
         return (double)this.numerateur/(double)this.denominateur;
     }
 
@@ -48,4 +48,29 @@ public class Fraction {
         
         return out;
     }
+
+    public boolean equals(Fraction f){
+        int a = this.numerateur * f.getDenominateur();
+        int b = f.getNumerateur() * this.denominateur;
+
+        if (a == b){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public int compare(Fraction f){
+        int a = this.numerateur * f.getDenominateur();
+        int b = f.getNumerateur() * this.denominateur;
+
+        if (a < b){
+            return -1;
+        }
+        else {
+            return 1;
+        }
+    }
+
 }
