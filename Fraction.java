@@ -3,6 +3,9 @@ public class Fraction {
     int numerateur;
     int denominateur;
 
+    private static final Fraction ZERO = new Fraction();
+    private static final Fraction UN = new Fraction();
+
     Fraction(int a, int b){
         this.numerateur = a;
         this.denominateur = b;
@@ -26,9 +29,23 @@ public class Fraction {
         return denominateur;
     }
 
+    public double getDoubleValue(){
+        return (double)this.numerateur/(double)this.denominateur;
+    }
+
     public String toString(){
-        String s = "Je suis une fraction.";
+        String s = this.numerateur+"/"+this.denominateur;
         return s;
     }
 
+
+    public Fraction add(Fraction f){
+
+        int a = this.numerateur*f.getDenominateur() + f.getNumerateur()*this.denominateur;
+        int b = this.denominateur*f.getDenominateur();
+
+        Fraction out = new Fraction(a,b);
+        
+        return out;
+    }
 }

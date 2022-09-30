@@ -85,7 +85,7 @@ Vous respecterez les consignes ci-dessous :
     * initialisation avec juste le numérateur (dénominateur égal à _1_),
     * initialisation sans argument (numérateur égal _0_ et dénominateur égal à _1_),
     ```Java
-    // Assertions pour tester les constructeurs (avec toString)
+    // assert f.get
     ```
 1. Ajoutez les fractions constantes ZERO (0, 1) et UN (1, 1) (cf. [Constants in Java](https://www.baeldung.com/java-constants-good-practices)),
     ```Java

@@ -2,18 +2,25 @@ public class Main {
 
     public static void main (String [] args){
         Fraction f;
-        f = new Fraction(5,3);
+        f = new Fraction(2,4);
         System.out.println(f.toString());
 
 
-        int a = f.getNumerateur();
-        int b = f.getDenominateur();
 
-        System.out.println("a : " + a + " b : " + b );
-
-        assert a == 5;
-        assert b != 0;
+        assert f.getNumerateur() == 2;
+        assert f.getDenominateur() != 0;
         
+
+        System.out.println("Ici :" + f.getDoubleValue());
+        assert f.getDoubleValue() == 0.5;
+
+        Fraction f2 = new Fraction(1,2);
+        Fraction f3 = new Fraction(3,4);
+
+
+        System.out.println(f2.add(f3).toString());
+
+
 
     }
     
